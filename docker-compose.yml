@@ -2,7 +2,8 @@ name: inventory
 
 services:
   app:
-    image: snipe/snipe-it:v7.1.15
+    image: snipe/snipe-it:v7.1.16
+    pull_policy: if_not_present
     container_name: inventory-web
     restart: unless-stopped
     volumes:
@@ -23,6 +24,7 @@ services:
 
   db:
     image: mariadb:11.5.2
+    pull_policy: if_not_present
     container_name: inventory-db
     restart: unless-stopped
     volumes:
@@ -37,7 +39,7 @@ services:
       interval: 5s
       timeout: 1s
       retries: 5
-      
+
 volumes:
   db_data:
   storage:

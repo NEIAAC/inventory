@@ -1,0 +1,35 @@
+/* Being able to disable unused modules is not an implemented feature of the platform
+at this time, so we hide them with custom CSS added through the dashboard! */
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: bold !important;
+    font-family: Verdana, sans-serif !important;
+}
+
+.navbar-nav>li:nth-child(3),
+.navbar-nav>li:nth-child(5) {
+    display: none;
+}
+
+ul.nav.navbar-nav>li.dropdown[aria-hidden="true"] {
+    display: none;
+}
+
+/* SIDEBAR */
+.sidebar-menu>li:nth-child(4),
+.sidebar-menu>li:nth-child(6),
+.sidebar-menu>li:nth-child(7) {
+    display: none;
+}
+
+/* DASHBOARD */
+#webui>.row>div:nth-child(3),
+#webui>.row>div:nth-child(5) {
+    display: none;
+}
+
+/* FOOTER */
+footer .pull-left>.pull-left {
+    display: none;
+}
