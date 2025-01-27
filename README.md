@@ -2,6 +2,8 @@
 
 ![screenshot](./.github/screenshots/first.png)
 
+This repository contains the configuration files to run a **Snipe-IT** instance with _Docker Compose_, a free and open source IT asset/license management system. It is a great tool to keep track of both material and software assets, as well as licenses and contracts, and can be used to manage the lifecycle of these assets, from acquisition to disposal.
+
 ## Requirements 📋
 
 - Docker Engine 25.0.0+
@@ -19,7 +21,19 @@
   docker compose up --force-recreate
   ```
 
-- Access Snipe-IT at the port you set in the `.env` file, the initial setup page will be shown on the first run.
+- Access Snipe-IT at the port you set in the `.env` file, the initial setup page will be shown on the first run, where an admin account will be created for the initial user. This privilege and every other permission can later be assigned to other users and managed in the respective panel.
+
+## Customization 🎨
+
+The `resources` folder contains most of the files we use to personalize our own instance:
+
+- `favicon.ico` - The icon for the website to be added through the admin panel.
+
+- `custom.css` - CSS to be added through the admin panel that hides certain features we don't need that can't be disabled and improves some styling.
+
+- `default-avatar.jpg` - Image to be set through the admin panel as the default for users without a profile picture.
+
+- `logo.png` - Logo that gets displayed in most of the platform, including sent emails, to be set through the admin panel.
 
 ## Notes 📝
 
