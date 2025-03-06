@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/NEIAAC/inventory/compare/v1.4.0...v1.4.1) (2025-03-06)
+
+
+### Bug Fixes
+
+* bump snipe-it version ([d4b4795](https://github.com/NEIAAC/inventory/commit/d4b47953ab865432fb59f764432ed3fc05b85e9a))
+
 ## [1.4.0](https://github.com/NEIAAC/inventory/compare/v1.3.0...v1.4.0) (2025-02-26)
 
 
