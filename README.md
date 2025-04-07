@@ -6,7 +6,6 @@ This repository contains the configuration files to run a **Snipe-IT** instance 
 
 ## Requirements 📋
 
-- Docker Engine 25.0.0+
 - Docker Compose 2.24.0+
 
 ## Usage 🚀
