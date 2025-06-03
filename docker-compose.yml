@@ -2,7 +2,7 @@ name: inventory
 
 services:
   app:
-    image: snipe/snipe-it:v8.1.3
+    image: snipe/snipe-it:v8.1.15
     pull_policy: if_not_present
     container_name: inventory-web
     restart: unless-stopped
